@@ -1,0 +1,32 @@
+.site-main-inner-wrapper.dark {
+  color: var(--color-lightgray);
+  background-color: var(--color-darkgray);
+}
+
+.site-main-inner-wrapper > section {
+  max-width: var(--site-max-width);
+  margin-inline: auto;
+  padding-inline: 12px;
+  padding-block: 2em 4em;
+}
+
+@media (max-width: 640px) {
+  .site-main-inner-wrapper > section {
+    padding-inline: 24px;
+  }
+}
+
+.site-main h2 {
+  margin-bottom: 0.5em;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.site-main h3 {
+  font-size: 24px;
+}
+
+.site-main p {
+  line-height: 1.65;
+  margin-bottom: 1.5em;
+}

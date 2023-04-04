@@ -1,0 +1,36 @@
+.picture-left,
+.picture-right {
+  display: grid;
+  margin-bottom: 3em;
+  gap: 1em;
+}
+
+.picture-right {
+  grid-template-columns: 1fr 240px;
+}
+
+.picture-left {
+  grid-template-columns: 240px 1fr;
+}
+
+.picture-left > svg,
+.picture-right > svg {
+  height: auto;
+  width: 240px;
+}
+
+@media (max-width: 800px) {
+  .picture-right,
+  .picture-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .picture-right {
+    flex-direction: column-reverse;
+  }
+
+  .picture-left {
+    flex-direction: column;
+  }
+}

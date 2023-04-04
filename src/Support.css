@@ -1,0 +1,47 @@
+.site-main-inner-wrapper > section.support {
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  padding: 0;
+  padding-inline: 12px;
+}
+
+@media (max-width: 640px) {
+  .site-main-inner-wrapper > section.support {
+    padding-inline: 24px;
+  }
+}
+
+.site-main-inner-wrapper > section.support > div:first-child {
+  padding-block: 2em 4em;
+}
+
+.support .hand {
+  width: 160px;
+  position: absolute;
+  top: 0;
+}
+
+.support .piggy {
+  width: 160px;
+  position: absolute;
+  bottom: 0;
+}
+
+.support .coin {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fbd63e;
+  border: 2px solid #ef971f;
+  color: #efaa1f;
+  position: absolute;
+  left: calc(50% - 18px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.piggy-animation-wrapper {
+  position: relative;
+}
